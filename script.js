@@ -15,7 +15,7 @@ function save() {
         mobilename,
         yourname
     }
-    // let arr = JSON.parse(localStorage.getItem("detail")) || [];
+   
     arr.push(data);
     localStorage.setItem("detail", JSON.stringify(arr));
     location.reload();
@@ -75,9 +75,9 @@ function update() {
         mobilename,
         yourname
     }
-    // let arr = JSON.parse(localStorage.getItem("detail")) || [];
+    
     arr.splice(index,1,data);
-    // arr.push(data);
+    
     localStorage.setItem("detail", JSON.stringify(arr));
     location.reload();
 }
