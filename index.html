@@ -6,68 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" /> -->
+
     <style>
-       
+
     </style>
 </head>
 
-<body style="background-color: rgb(30, 29, 29)">
-    <div class="container">
-        <div>
+<body style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,5,80,0.7483368347338936) 18%, rgba(9,68,121,0.5662640056022409) 28%, rgba(7,131,154,1) 52%, rgba(166,4,197,0.6166841736694677) 81%, rgba(0,212,255,1) 100%);">
+    
+        <div class="container">
             <div>
-                <h1 style="text-align: center;">ToDo list</h1>
+                <div>
+                    <h1 style="text-align: center;">ToDo list</h1>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="" style="display: block; margin-bottom: 5px;">User Id</label>
+                    <input type="text" name="" id="modal" placeholder="User Id"
+                        style="border-radius: 2px; border: 1px solid transparent; box-shadow: 1px 1px 2px 2px #999696;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="" style="display: block; margin-bottom: 5px;">Product name</label>
+                    <input type="text" name="" id="mobilename" placeholder="Product      Name"
+                        style="border-radius: 2px; border: 1px solid transparent; box-shadow: 1px 1px 2px px #999696;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="" style="display: block; margin-bottom: 5px;">Your name</label>
+                    <input type="text" name="" id="yourname" placeholder="Your Name"
+                        style="border-radius: 2px; border: 1px solid transparent; box-shadow: 1px 1px 2px 2px #999696;">
+                </div>
+                <div style="margin-bottom: 15px; display: none;">
+                    <label for="" style="display: block; margin-bottom: 5px;">index</label>
+                    <input type="text" name="" id="index" placeholder="index"
+                        style="border-radius: 10px; border: 1px solid transparent; box-shadow: 1px 1px 2px 2px #999696;">
+                </div>
             </div>
-            <div style="margin-bottom: 15px;">
-                <label for="" style="display: block; margin-bottom: 5px;">Modal</label>
-                <input type="text" name="" id="modal" placeholder="Modal"
-                    style="border-radius: 10px; border: 1px solid transparent; box-shadow: 1px 1px 2px 2px #999696;">
+            <div>
+                <p id="para"></p>
             </div>
-            <div style="margin-bottom: 15px;">
-                <label for="" style="display: block; margin-bottom: 5px;">mobile name</label>
-                <input type="text" name="" id="mobilename" placeholder="Mobile Name"
-                    style="border-radius: 10px; border: 1px solid transparent; box-shadow: 1px 1px 2px 2px #999696;">
-            </div>
-            <div style="margin-bottom: 15px;">
-                <label for="" style="display: block; margin-bottom: 5px;">Your name</label>
-                <input type="text" name="" id="yourname" placeholder="Your Name"
-                    style="border-radius: 10px; border: 1px solid transparent; box-shadow: 1px 1px 2px 2px #999696;">
-            </div>
-            <div style="margin-bottom: 15px; display: none;">
-                <label for="" style="display: block; margin-bottom: 5px;">index</label>
-                <input type="text" name="" id="index" placeholder="index"
-                    style="border-radius: 10px; border: 1px solid transparent; box-shadow: 1px 1px 2px 2px #999696;">
-            </div>
-        </div>
-        <div>
-            <p id="para"></p>
-        </div>
-        <div style="display: flex; justify-content: center; gap: 10px;">
-            <button
-                style="padding: 10px 30px; border-radius: 10px; box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);border: 0px; cursor: pointer;"
-                onclick="save()">save</button>
+            <div style="display: flex; justify-content: center; gap: 10px;">
                 <button
-                style="padding: 10px 30px; border-radius: 10px; box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);border: 0px; cursor: pointer;"
-                onclick="update()">update</button>
+                    style="padding: 10px 30px; border-radius: 10px; box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);border: 0px; cursor: pointer;"
+                    onclick="save()">save</button>
+                <button
+                    style="padding: 10px 30px; border-radius: 10px; box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(76, 116, 186, 0.3);border: 0px; cursor: pointer;"
+                    onclick="update()">update</button>
+            </div>
         </div>
     </div>
     <div id="container2" style="gap: 10px;">
-        <!-- <div id="sec" > -->
-            <!-- <div style="color: rgb(2, 2, 2); background-color:white; border-radius: 20px; padding: 10px 20px;">
-                <div>
-                    <h2 style="color: blue;">Modal Name</h2>
-                    <h3>j2</h3>
-                </div>
-                <div>
-                    <h2 style="color: blue;">Mobile Name</h2>
-                    <h3>samsung</h3>
-                </div>
-                <div>
-                    <h2 style="color: blue;">Yourname</h2>
-                    <h3>pravesh</h3>
-                </div>
-            </div> -->
-        </div>
+    </div>
     </div>
     <script src="script.js"></script>
 
